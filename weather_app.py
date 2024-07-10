@@ -71,13 +71,13 @@ def main():
         predictions = loaded_model.predict(processed_data)
         
         if predictions[0] == 1:
-            st.write('The weather will be Rainy')
+            st.success('The weather will be Rainy')
         elif predictions[0]==0:
-            st.write('The weather will be Cloudy')
+            st.success('The weather will be Cloudy')
         elif predictions[0]==3:
-            st.write('The weather will be Sunny')
+            st.success('The weather will be Sunny')
         elif predictions[0]==2:
-            st.write('The weather will be snowy')
+            st.sucess('The weather will be snowy')
             
     
 if __name__ == '__main__':
