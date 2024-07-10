@@ -7,7 +7,9 @@ import pickle
 
 
 #loading the model
-loaded_model = pickle.load(open('C:/Users/HP/Desktop/weather/weather_model.sav', 'rb'))
+#loaded_model = pickle.load(open('C:/Users/HP/Desktop/weather/weather_model.sav', 'rb'))
+loaded_model = pickle.load(open('weather_model.sav', 'rb'))
+
 
 def preprocessing(input_data):
     cloud_cover_encoder = LabelEncoder()
